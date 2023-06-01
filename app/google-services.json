@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490625858689",
+    "project_id": "bsiotr-tpc",
+    "storage_bucket": "bsiotr-tpc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490625858689:android:3e91f99774c7588d60a180",
+        "android_client_info": {
+          "package_name": "com.example.bsiotr_tpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490625858689-hgquos1plb8gdm7gflu92a7t5jbprmib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU9kXtIrVT2hNlE5CJiyDb-LBEO_ZrpBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490625858689-hgquos1plb8gdm7gflu92a7t5jbprmib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

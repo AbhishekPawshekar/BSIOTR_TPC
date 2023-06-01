@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_page_framelayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home_page.homeclick">
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl1"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/red">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/bsiotr_logo"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/notification_logo"
+                    />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbars="horizontal"
+        android:id="@+id/event_details_display"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/people_cv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/rl1"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#2962FF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/people_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignRight="@+id/text_people"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100dp"
+                    android:src="@drawable/people_icon" />
+
+                <TextView
+                    android:id="@+id/text_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="People"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/people_right_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/right_angle_icon" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/meassegs_cv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/people_cv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#AA00FF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/msg_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@+id/text_chat"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="120dp"
+                    android:src="@drawable/chat_icon" />
+
+                <TextView
+                    android:id="@+id/text_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="Messages"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/chat_right_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/right_angle_icon" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/placement_cv"
+            android:layout_alignTop="@+id/meassegs_cv"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/teal_200"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/training_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignRight="@+id/text_training"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="140dp"
+                    android:src="@drawable/placement_icon" />
+
+                <TextView
+                    android:id="@+id/text_training"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="Placements"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/training_right_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_angle_icon" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/test_cv"
+            android:layout_alignTop="@+id/placement_cv"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/purple_500"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/practice_test_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@+id/text_practice"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="150dp"
+                    android:src="@drawable/practice_icon" />
+
+                <TextView
+                    android:id="@+id/text_practice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="Practice Test"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/practice_right_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_angle_icon" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

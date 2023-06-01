@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:id="@+id/grp4"
+    android:checkableBehavior="single">
+    <item android:id="@+id/home_bottom"
+    android:title="Home"
+    android:icon="@drawable/home_icon_white"/>
+<item android:id="@+id/calendar"
+    android:title="Calendar"
+    android:icon="@drawable/calender_icon"/>
+    <item android:title="audit"
+        android:icon="@drawable/audit_icon"
+        android:id="@+id/audit"/>
+    <item android:title="Resume"
+        android:icon="@drawable/resume_icon"
+        android:id="@+id/resume"/>
+    <item android:title="Info"
+        android:icon="@drawable/info_icon"
+        android:id="@+id/info"/>
+</group>
+</menu>

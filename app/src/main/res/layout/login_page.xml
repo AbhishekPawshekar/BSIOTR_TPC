@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/R"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".login__page">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="150dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_page_image">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="𝔹𝕙𝕚𝕧𝕒𝕣𝕒𝕓𝕒𝕚 𝕊𝕒𝕨𝕒𝕟𝕥 𝕀𝕟𝕤𝕥𝕚𝕥𝕦𝕥𝕖 𝕠𝕗 𝕋𝕖𝕔𝕙𝕟𝕠𝕝𝕠𝕘𝕪 𝕒𝕟𝕕 ℝ𝕖𝕤𝕖𝕒𝕣𝕔𝕙"
+                    android:textColor="#0547FB"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="#BA3A3A39"
+                    app:cardBackgroundColor="#7EFFFFFF"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="Login "
+                            android:textColor="#006056"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/password"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="80dp"
+                            android:textSize="10dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="Email-Id:"
+                                android:inputType="textPersonName"
+                                android:singleLine="false"
+                                android:textColor="@color/red"
+                                android:textSize="10dp"
+                                android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="10dp"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="Password:"
+                                android:inputType="textPassword"
+                                android:singleLine="false"
+                                android:textColor="@color/red"
+                                android:textSize="10dp"
+                                android:textStyle="normal|italic"></com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/password"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginRight="20dp"
+                            android:background="#79F8F4F4"
+                            android:fontFamily="serif"
+                            android:text="Forgot Password?"
+                            android:textColor="@color/red"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/registration_request"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:padding="8dp"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/registration_request"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:onClick="request_to_signup"
+        android:text="Register"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+
+

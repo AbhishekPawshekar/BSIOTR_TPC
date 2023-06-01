@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationbar_option_layout.calendar"
+    android:orientation="horizontal">
+<include layout="@layout/toolbar1"/>
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:elevation="30dp"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:soundEffectsEnabled="true"
+        android:focusedMonthDateColor="@color/red"
+        android:backgroundTint="@color/red"
+        />
+
+</RelativeLayout>

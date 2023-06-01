@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:id="@+id/grp1"
+    android:checkableBehavior="single">
+    <item android:title="GENERAL"
+        android:enabled="false"
+        android:checkable="false"/>
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+</group>
+    <group android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item android:title="EXPLORE"
+            android:checkable="false"
+            android:enabled="false"/>
+        <item android:title="People"
+        android:id="@+id/people"
+        android:icon="@drawable/people_icon_black"/>
+    <item android:id="@+id/messages"
+        android:icon="@drawable/chat_icon"
+        android:title="Messages"/>
+        <item android:id="@+id/notification"
+            android:icon="@drawable/notification_logo"
+            android:title="Notification"/>
+
+        <item android:id="@+id/placement"
+            android:icon="@drawable/placement_icon"
+            android:title="Placements"/>
+    </group>
+    <group android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item android:title="ACCOUNT"
+            android:enabled="false"
+            android:checkable="false"/>
+        <item android:id="@+id/delete_account"
+            android:title="Delete Account"
+            android:icon="@drawable/delete_icon"/>
+        <item android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_icon"/>
+    </group>
+</menu>
